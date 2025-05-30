@@ -1,0 +1,34 @@
+# .gitignore
+
+# Variáveis de ambiente (contêm segredos e não devem ser commitadas)
+rail.env
+.env # Incluí .env também, caso você use esse nome em algum outro projeto
+
+# Arquivos de cache do Python
+__pycache__/
+*.pyc
+
+# Arquivos de banco de dados locais (se você usar SQLite, por exemplo)
+*.sqlite3
+*.db
+
+# Diretórios de backup ou temporários
+/backup/ # A pasta onde seus CSVs são gerados localmente
+
+# Logs
+*.log
+logs/
+
+# Dependências de ambiente virtual (se você usar venv ou virtualenv)
+venv/
+.venv/
+env/
+
+# Arquivos de IDEs (opcional, mas útil)
+.vscode/ # Para VS Code
+.idea/   # Para PyCharm/IntelliJ
+*.iml    # Para PyCharm/IntelliJ
+
+# Arquivos de sistema operacional
+.DS_Store # macOS
+Thumbs.db # Windows
